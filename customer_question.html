@@ -9,50 +9,56 @@
     <script src="dropdown.js"></script>
     <link rel="stylesheet" href="./css/customer_question.css">
 </head>
-<body>
-    <div class="header">
-        <a href="index.html">
-            <img src="logo.png" alt="pltoo 로고" class="logo">
-        </a>
-        <nav>
-            <ul>
-                <li class="dropdown">
-                    <a href="#qa">게임</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#qa1">친구목록</a></li>
-                        <li><a href="#qa2">채팅</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#booking">게시판</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#booking1">자유게시판</a></li>
-                        <li><a href="#booking2">2</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#booking">고객센터</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#booking1">질문</a></li>
-                        <li><a href="#booking2">이용안내</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div class="search">
-            <input type="text" id="searchInput" placeholder="궁금한 내용을 검색해보세요" style="display: none;">
-            <button class="search-button" onclick="toggleSearch()">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-        </div>
-        <div class="globe-icon">
-            <i class="fa-solid fa-globe"></i>
-        </div>
-        <div class="auth">
-            <a href="../login/loginForm.html">로그인</a>
-            <a href="signup.html">회원가입</a>
-        </div>
+<div class="header">
+    <a src="index.html">
+        <img src="logo.png" alt="pltoo 로고" class="logo">
+    </a>
+    <nav class="header_tab">
+        <ul>
+            <li class="dropdown">
+                <a href="#qa">게임</a>
+                <ul class="dropdown-content">
+                    <li><a href="#qa1">친구목록</a></li>
+                    <li><a href="#qa2">채팅</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#booking">게시판</a>
+                <ul class="dropdown-content">
+                    <li><a href="#booking1">자유게시판</a></li>
+                    <li><a href="#booking2">2</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#booking">고객센터</a>
+                <ul class="dropdown-content">
+                    <li><a href="#booking1">문의사항</a></li>
+                    <li><a href="#booking2">자주묻는 질문</a></li>
+                    <li><a href="#booking3">신고</a></li>
+                    <li><a href="#booking3">챗봇</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="search">
+        <input type="text" id="searchInput"  class="search-input" placeholder="궁금한 내용을 검색해보세요" style="display: none;">
+        <button class="search-button" onclick="toggleSearch()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
     </div>
+    <div class="globe-icon" onclick="toggleDropdown()">
+        <i class="fa-solid fa-globe"></i>
+        <ul class="dropdown-content" id="dropdownMenu" style="display: none;">
+            <li><a href="#option1">Option 1</a></li>
+            <li><a href="#option2">Option 2</a></li>
+            <li><a href="#option3">Option 3</a></li>
+        </ul>
+    </div>
+    <div class="auth">
+        <a href="../login/loginForm.html">로그인</a>
+        <a href="../join/join02.html">회원가입</a>
+    </div>
+</div>
     
     <section id="center">
         <div class="customer_title">
